@@ -1,8 +1,10 @@
 namespace Data_Structures_Implementations_API.SinglyLinkedList.Models;
 
-public class Node<T>(T data)
+public class SinglyLinkedNode(int data)
 {
-    public T Data { get; set; } = data;
+    public int Id { get; set; }
+    
+    public int Data { get; set; } = data;
 
-    public Node<T>? NextNode { get; set; } = null;
+    public SinglyLinkedNode? NextNode { get; set; } = null;
 }
